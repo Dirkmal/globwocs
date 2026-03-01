@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/globwocs/public_html/
-    - rsync -av --exclude='.git' --exclude='node_modules' ./ $DEPLOYPATH
+    - /bin/cp -a . $DEPLOYPATH
